@@ -168,7 +168,14 @@ class SuperStoreTest {
         }
 
         // - Call equals() to compare two products with the same ID and name
-        //System.out.println("Comparison: " + this.name.equals(this.productId));
+        System.out.println("Comparison: " + product.equals(product));
+        System.out.println("Comparison: " + product.equals(gamingThing));
+        System.out.println("Comparison: " + product.equals(foods));
+        System.out.println("Comparison: " + product.equals(plastic));
+    
+        double discountVar = Coupon.discountRate;
+        gamingThing.price -= gamingThing.price*discountVar
+        System.out.println(gamingThing);
     }
 }
 
@@ -179,7 +186,9 @@ class SuperStoreTest {
 
 // 2. Make a class Coupon with a final discountRate and apply it to a Product
 
-//class Coupon
+class Coupon {
+    final static double discountRate = .45;
+}
 
 // 3. Add a method to Electronics called warrantyInfo() and mark it final
 //ok done
