@@ -83,6 +83,9 @@ class Electronics extends Product {
     public String toString() {
         return "Brand: " + brand " Has battery: " + hasBattery;
     }
+    final warrantyInfo() {
+        System.out.println("Money :(");
+    }
 }
 
 
@@ -165,7 +168,7 @@ class SuperStoreTest {
         }
 
         // - Call equals() to compare two products with the same ID and name
-        System.out.println("Comparison: " + .equals());
+        //System.out.println("Comparison: " + this.name.equals(this.productId));
     }
 }
 
@@ -179,5 +182,10 @@ class SuperStoreTest {
 //class Coupon
 
 // 3. Add a method to Electronics called warrantyInfo() and mark it final
+//ok done
+
 
 // 4. Use access modifiers appropriately and explain your choices in comments
+//ok, I mainly used public cause it was the least restrictive,
+// and in them I use a jumble of private and protected cause I dont want other classes outside the ones I made access my variables
+//UNLESS i soecifically say in the initalization to access them
